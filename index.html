@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ASSETS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>PC방 자리 이용현황</title>
+    </head>
+    <body>
+
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">카이피방&#8482;</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">홈</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">PCR에 대하여</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">서비스</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">사용 현황</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">문의</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">카이피방&#8482;</h1>
+                        <h2 class="home__subtitle" id="isAvailable">지금 북측을 가면 <br> 자리가 있을까?</h2>
+                        <button class="button" id="checkAvail" onclick="fillSeatAvail();">확인해보기</a>
+                    </div>
+    
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">카이피방&#8482;에 대하여</span>
+                        <h2 class="section-title about__initial">우리 학교만의 소중한 <br> 가까운 PC방</h2>
+                        <p class="about__description">자는 룸메 방해하지 말고, 느려터진 컴퓨터 상대하지 말고 카이피방으로 오세요. 문은 열려 있습니다. </p>
+                        <a href="#" class="button">소개 더보기</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">제공 서비스</span>
+                <h2 class="section-title">카이피방&#8482;의 장점이라면...</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="assets/img/distance.svg" alt="distance" style="height: 10em"/>
+                        <h3 class="services__title">가까운 거리</h3>
+                        <p class="services__description">PC방 요금과 비슷한 킥보드 요금, 이제 그만! (구)학복위 당구장에 생긴 카이피방&#8482;은 북측 거주자에게 가뭄의 단비같은 존재가 되겠습니다.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/internet.svg" alt="internet" style="height: 10em"/>
+                        <h3 class="services__title">빠른 인터넷</h3>
+                        <p class="services__description">10Gbps망 인입(예정?)으로 게임 다운로드는 순식간에. 국가 기간망 KT와의 직결 연결로 핑도 최소화하였습니다.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/free.svg" alt="freedom" style="height: 10em"/>
+                        <h3 class="services__title">자유</h3>
+                        <p class="services__description">2,3인실 여러분, 언제까지 룸메 눈치만 볼 수 없잖아요. 눈치 없이 밤 새서 게임할 수 있는 자유를 드립니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">정보</span>
+                <h2 class="section-title">컴퓨터 사양입니다.</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/c1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">게임용</h3>
+                        <span class="menu__detail">RTX 3060Ti</span>
+                        <span class="menu__preci">시간당 1250원</span>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/c2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">작업용</h3>
+                        <span class="menu__detail">RTX 2060 12GB</span>
+                        <span class="menu__preci">시간당 1000원</span>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/c3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">자유형</h3>
+                        <span class="menu__detail">롤 전용 가성비</span>
+                        <span class="menu__preci">시간당 500원</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">궁금한 것이 있으신가요?</span>
+                        <h2 class="section-title contact__initial">문의 환영</h2>
+                        <p class="contact__description">행사 진행을 비롯한 단체석이 필요한 경우 먼저 연락을 주시면 최대한 빠르게 답변해드리도록 하겠습니다.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="mailto:SCSpace.kaist@gmail.com" class="button">지금 문의하기</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">카이피방&#8482;</a>
+                    <span class="footer__description">장소</span>
+                    <div>
+                        <a href="https://www.facebook.com/scspace.kaist" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/scspace.kaist/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">서비스</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">남은 좌석 확인</a></li>
+                        <li><a href="#services" class="footer__link">장점</a></li>
+                        <li><a href="#menu" class="footer__link">사양</a></li>
+                        <li><a href="#" class="footer__link">예약하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">정보</h3>
+                    <ul>
+                        <li><a href="#contact" class="footer__link">문의하기</a></li>
+                        <li><a href="#" class="footer__link">개인정보보호방침</a></li>
+                        <li><a href="#" class="footer__link">이용약관</a></li>
+                    </ul>
+                    <a href="https://www.vecteezy.com/free-vector/" class="footer__link">Vectors by Vecteezy</a>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">주소</h3>
+                    <ul>
+                        <li>KAIST, 대한민국</li>
+                        <li>N11 학생회관</li>
+                        <li>042 - 350 - ????</li>
+                        <li>SCSpace.kaist@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 학생문화공간위원회. All right reserved</p>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
